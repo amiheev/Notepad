@@ -67,7 +67,9 @@ public class NotepadTable extends DefaultTableModel {
         @Override
         public void actionPerformed(ActionEvent e) {
             etm.addData(record.getText());
-            employees.repaint();
+            etm.fireTableDataChanged();
+            
+
         }
     }
 
